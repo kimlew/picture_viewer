@@ -12,4 +12,9 @@ function selectPets() {
   ul.setAttribute("class", "show");
 }
 
+function selectFaces() {
+  var ul = document.getElementById("facesList");
+  ul.setAttribute("class", "show");
+}
+
 window.onload = init;
