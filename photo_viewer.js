@@ -29,7 +29,7 @@ function selectFaces() {
 }
 
 function showHide(elem) {
-  // So menus hidden when clicked a 2nd time.
+  // Toggle show/hide - so menus hidden when clicked a 2nd time.
   var ulClass = elem.getAttribute("class");
   
   if (ulClass == "show") {
