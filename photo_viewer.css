@@ -1,0 +1,59 @@
+body {
+  font-family: verdana, sans-serif;
+}
+
+ul {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+ul li {
+  display: inline-block;
+  position: relative;
+}
+
+ul li span {
+  padding: 2px 12px 2px 7px;
+  background-color: #bebebe; /* medium grey */
+  display: block;
+}
+
+/* Selects nested lists, i.e., ONLY ul elements nested within li elements
+ nested within ul elements. 
+ Nested lists - are the drop-down parts of menus that appear below menu item 
+ headings, Pets and Faces. 
+ Menu items - in horizontal layout */
+ul li ul {
+  padding: 0px;
+  margin: 0px;
+  left: 0px;
+  top: 5px;
+  width: 100%;
+  position: relative;
+  visibility: hidden; /* To make initial state of drop-down menus invisible */
+}
+
+ul li ul li {
+  padding: 2px 7px 2px 7px;
+  display: block;
+}
+ul li ul li:hover {
+  background-color: #bebebe; /* medium grey */
+}
+ul li ul li a {
+  color: black;
+  display: block;
+  text-decoration: none;
+}
+
+span:hover {
+  cursor: hand;
+  cursor: pointer;
+  user-select: none;
+}
+
+/* To show drop-down menus ONLY when user clicks main menu item. */
+.show {
+  visibility: visibile; 
+}
+
