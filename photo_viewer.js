@@ -1,5 +1,16 @@
+// For JSLint:
+
+// To disable use strict warning:
+/*jslint node: true */
+
+// To disable warning for undeclared document, window
+/*jslint browser: true*/
+
+/*jslint white: true */
 
 function init() {
+  "use strict";
+  
   var petsSpan = document.getElementById("pets");
   var facesSpan = document.getElementById("faces");
   
