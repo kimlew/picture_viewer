@@ -20,13 +20,13 @@ function init() {
 
 function selectPets() {
   var ul = document.getElementById("petsList");
-  showHide(elem);
+  showHide(ul);
 
 }
 
 function selectFaces() {
   var ul = document.getElementById("facesList");
-  showHide(elem);
+  showHide(ul);
 }
 
 function showHide(elem) {
