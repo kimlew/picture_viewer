@@ -35,7 +35,7 @@ function showHide(elem) {
   
   for (var i = 0; i < selectedElems.length; i++) {
     if (selectedElems[i] != elem) {
-      selectedElems[i] = setAttribute("class", "");
+      selectedElems[i].setAttribute("class", "");
     }
   }
   
