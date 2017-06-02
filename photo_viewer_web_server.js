@@ -48,6 +48,7 @@ http.createServer(function (req, res) { // Called with each request. Callback
             ".css": "text/css",
             ".txt": "text/plain",
             ".jpg": "image/jpeg",
+            ".jpg": "image/jpg",
             ".gif": "image/gif",
             ".png": "image/png",
             ".woff": "application/font-woff",
