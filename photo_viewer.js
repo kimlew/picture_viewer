@@ -33,6 +33,9 @@ function showHide(elem) {
   // Show ONLY menu user clicked on. Hide other menus.
   var selectedElems = document.querySelectorAll(".show");
   
+  // Loop through all elements in the collection of elements in the show class 
+  // (in this case - is only 1) & compare to the user-clicked one. If not the
+  // user-clicked one, set the class to empty "" - to hide it.
   for (var i = 0; i < selectedElems.length; i++) {
     if (selectedElems[i] != elem) {
       selectedElems[i].setAttribute("class", "");
