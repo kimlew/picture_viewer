@@ -32,6 +32,15 @@ function showHide(elem) {
   // So menus hidden when clicked a 2nd time.
   var ulClass = elem.getAttribute("class");
   
+  if (ulClass == "show") {
+    // Element is selected - so deselect it and hide it.
+    elem.setAttribute("class", "");
+  }
+  else {
+    // Element is NOT selected - so select it and show it.
+    elem.setAttribute("class", "show");
+  }
+  
 }
 
 window.onload = init;
