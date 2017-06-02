@@ -28,4 +28,10 @@ function selectFaces() {
   ul.setAttribute("class", "show"); // Does same as: <ul id="facesList" class="show">
 }
 
+function showHide(elem) {
+  // So menus hidden when clicked a 2nd time.
+  var ulClass = elem.getAttribute("class");
+  
+}
+
 window.onload = init;
