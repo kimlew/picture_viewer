@@ -52,7 +52,8 @@ span:hover {
   user-select: none;
 }
 
-/* To show drop-down menus ONLY when user clicks main menu item. */
+/* Sets visibility property back to visible.
+ - shows drop-down menus ONLY when user clicks main menu item */
 .show {
   visibility: visibile; 
 }
