@@ -7,4 +7,9 @@ function init() {
   facesSpan.onclick = selectFaces;
 }
 
+function selectPets() {
+  var ul = document.getElementById("petsList");
+  ul.setAttribute("class", "show");
+}
+
 window.onload = init;
