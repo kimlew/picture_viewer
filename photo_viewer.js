@@ -30,6 +30,15 @@ function selectFaces() {
 }
 
 function showHide(elem) {
+  // Show ONLY menu user clicked on. Hide other menus.
+  var selectedElems = document.querySelectorAll(".show");
+  
+  for (var i = 0; i < selectedElems.length; i++) {
+    if (selectedElems[i] != elem) {
+      selectedElems[i] = setAttribute("class", "");
+    }
+  }
+  
   // ulClass - initially ""
   // Toggle show/hide - so menus hidden when clicked a 2nd time.
   var ulClass = elem.getAttribute("class");
