@@ -24,12 +24,12 @@ ul li span {
  headings, Pets and Faces. 
  Menu items - in horizontal layout */
 ul li ul {
+  position: relative;
   padding: 0px;
   margin: 0px;
   left: 0px;
   top: 5px;
   width: 100%;
-  position: relative;
   visibility: hidden; /* To make initial state of drop-down menus invisible */
 }
 
