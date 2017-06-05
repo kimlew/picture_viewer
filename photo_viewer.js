@@ -6,6 +6,7 @@
 // To disable warning for undeclared document, window
 /*jslint browser: true*/
 
+// To ignore number of indentation spaces.
 /*jslint white: true */
 
 function init() {
