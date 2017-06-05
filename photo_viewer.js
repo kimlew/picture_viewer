@@ -38,6 +38,7 @@ function selectFaces() {
 
 function showHide(elem) {
   // Show ONLY menu user clicked on. Hide other menus.
+  // Deselect everything.
   var selectedElems = document.querySelectorAll(".show");
   
   // Loop through all elements in the collection of elements in the show class 
