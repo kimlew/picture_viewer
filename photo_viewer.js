@@ -70,6 +70,7 @@ function showHide(elem) {
 function addImage(evObj) {
   // 
   var a = evObj.target;
+  var imagePath = a.getAttribute("href");
   
   return false; // Prevents browser from going to a new web page.
 }
