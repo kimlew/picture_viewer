@@ -71,8 +71,9 @@ function addImage(evObj) {
   // 
   var a = evObj.target;
   var imagePath = a.getAttribute("href");
-  
   var image = document.createElement("img");
+  
+  image.setAttribute("src", imagePath);
   
   return false; // Prevents browser from going to a new web page.
 }
