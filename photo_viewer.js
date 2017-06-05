@@ -64,4 +64,8 @@ function showHide(elem) {
   
 }
 
+function addImage(ev) {
+  // Add more in a bit.
+  return false;
+}
 window.onload = init;
