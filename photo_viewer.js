@@ -76,9 +76,7 @@ function addImage(evObj) {
   image.setAttribute("src", imagePath);
 
   var div = document.getElement("image");
-  
-  // Add image to the div.
-  div.appendChild("image");
+  div.appendChild("image"); // Adds image to the div.
   
   return false; // Prevents browser from going to a new web page.
 }
