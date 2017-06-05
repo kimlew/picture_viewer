@@ -20,6 +20,8 @@ function init() {
   
   var links = document.querySelectorAll("a");
   
+  // Loop through collection of elements, links. Adds addImage() as click
+  // handler for each element in collection.
   for (var i = 0; i < links.length; i++) {
     links[i].onclick = addImage;
   }
