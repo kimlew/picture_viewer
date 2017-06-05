@@ -77,6 +77,9 @@ function addImage(evObj) {
 
   var div = document.getElement("image");
   
+  // Add image to the div.
+  div.appendChild("image");
+  
   return false; // Prevents browser from going to a new web page.
 }
 window.onload = init;
