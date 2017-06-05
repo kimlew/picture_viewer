@@ -17,6 +17,8 @@ function init() {
   
   petsSpan.onclick = selectPets;
   facesSpan.onclick = selectFaces;
+  
+  var links = document.querySelectorAll("a");
 }
 
 function selectPets() {
