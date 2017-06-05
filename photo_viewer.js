@@ -67,8 +67,9 @@ function showHide(elem) {
   
 }
 
-function addImage(ev) {
-  // Add more in a bit.
+function addImage(evObj) {
+  // 
+  var a = evObj.target;
   
   return false; // Prevents browser from going to a new web page.
 }
