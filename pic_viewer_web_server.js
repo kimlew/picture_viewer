@@ -1,4 +1,4 @@
-/* node.js web server for movie favs application */
+/* node.js web server for picture viewer application */
 
 // For JSLint:
 /*jslint node: true */
