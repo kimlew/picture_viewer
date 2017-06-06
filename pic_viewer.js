@@ -23,6 +23,7 @@ function init() {
   // Loop through collection of elements, links. Adds addImage() as click
   // handler for each element in collection.
   for (var i = 0; i < links.length; i++) {
+    console.log("Adding addImage as a click handler for", links[i].getAttribute("href"));
     links[i].onclick = addImage;
   }
 }
@@ -68,6 +69,7 @@ function showHide(elem) {
 }
 
 function addImage(evObj) {
+  console.log("adding image", evObj);
   // 
   var a = evObj.target;
   var imagePath = a.getAttribute("href");
