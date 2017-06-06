@@ -27,13 +27,13 @@ http.createServer(function (req, res) { // Called with each request. Callback
   console.log("Request received-Am IN http.createServer(function(req, res) ");
   
   if (req.method === "GET") {
-    var filename = req.url || "/photo_viewer.html"; // Defaults to index.html
+    var filename = req.url || "/pic_viewer.html"; // Defaults to index.html
     // http://localhost:3002 OR http://localhost:3002/ 
     // OR http://localhost:3002/index.html
     
     // Test if filename === /  - which is root URL which is equivalent to index.html
     if (filename === "/") {
-       filename = "/photo_viewer.html"; 
+       filename = "/pic_viewer.html"; 
     }
 	
     console.log("Method is GET?: ", req.method);
@@ -107,9 +107,9 @@ function getFile(localPath, res, mimeType) {
 		}
 	});
 }
-/* mac$ node photo_viewer_web_server.js
+/* mac$ node pic_viewer_web_server.js
 Starting web server at :3003
 
- http://localhost:3003/pets.html
+ http://localhost:3003/pic_viewer.html
  */
 
