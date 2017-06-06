@@ -18,13 +18,20 @@ function init() {
   petsSpan.onclick = selectPets;
   facesSpan.onclick = selectFaces;
   
+  // Grab all <a> and loop through collection of elements, links. 
+  // Adds addImage() as click handler for each element in collection.
   var links = document.querySelectorAll("a");
   
-  // Loop through collection of elements, links. Adds addImage() as click
-  // handler for each element in collection.
+  console.log("Makes it to here after .querySelectorAll");
+  console.log("links are: ", links);
+  console.log("links length is: ", links.length);
+
   for (var i = 0; i < links.length; i++) {
-    console.log("Adding addImage as a click handler for", links[i].getAttribute("href"));
     links[i].onclick = addImage;
+    
+    console.log("i is: ", i, " links[i] is: ", links[1]);
+    console.log("Adding addImage as a click handler for", links[i].getAttribute("href"));
+    console.log("In LOOP still and AFTER addImage function name reference");
   }
 }
 
@@ -69,16 +76,19 @@ function showHide(elem) {
 }
 
 function addImage(evObj) {
-  console.log("adding image", evObj);
-  // 
+  console.log("ADDING image to page", evObj);
+  
   var a = evObj.target;
+    console.log("var a is: ", a);
   var imagePath = a.getAttribute("href");
+    console.log("imagePath is: ", imagePath);
   var image = document.createElement("img");
+   console.log("image is: ", image);
   
   image.setAttribute("src", imagePath);
 
   var div = document.getElement("image");
-  div.appendChild("image"); // Adds image to the div.
+  div.appendChild("image"); // Adds image to the div, i.e., adds element to DOM.
   
   return false; // Prevents browser from going to a new web page.
 }
