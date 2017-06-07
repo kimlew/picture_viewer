@@ -88,6 +88,13 @@ function addImage(evObj) {
   image.setAttribute("src", imagePath);
 
   var div = document.getElementById("image");
+  
+  // Remove existing children so ONLY clicked image shows.
+  // Otherwise all clicked images display on page.
+  if (div.firstChild) {
+    div.removeChild(div.firstChild);
+  }
+  
   div.appendChild(image); // Adds image to the div, i.e., adds element to DOM.
   
   return false; // Prevents browser from going to a new web page.
