@@ -14,7 +14,7 @@ ul li {
 
 ul li span {
   padding: 2px 12px 2px 7px;
-  background-color: #bebebe; /* medium grey */
+  background-color: #4CAF50; /* Green */
   display: block;
 }
 
@@ -38,7 +38,7 @@ ul li ul li {
   display: block;
 }
 ul li ul li:hover {
-  background-color: #bebebe; /* medium grey */
+  background-color: #4CAF50; /* Green */
 }
 ul li ul li a {
   display: block;
