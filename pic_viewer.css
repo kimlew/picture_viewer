@@ -53,7 +53,9 @@ span:hover {
   user-select: none;
 }
 
-
+div#image {
+  margin: 20px;
+}
 
 /* Sets visibility property back to visible.
  - shows drop-down menus ONLY when user clicks main menu item 
