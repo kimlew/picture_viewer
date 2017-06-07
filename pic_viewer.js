@@ -88,7 +88,7 @@ function addImage(evObj) {
   image.setAttribute("src", imagePath);
 
   var div = document.getElementById("image");
-  div.appendChild("image"); // Adds image to the div, i.e., adds element to DOM.
+  div.appendChild(image); // Adds image to the div, i.e., adds element to DOM.
   
   return false; // Prevents browser from going to a new web page.
 }
