@@ -16,6 +16,11 @@ ul li span {
   padding: 2px 12px 2px 7px;
   background-color: #4CAF50; /* Green */
   display: block;
+  border-top: 1px solid #CCCCCC;
+  border-right: 1px solid #333333;
+  border-bottom: 1px solid #333333;
+  border-left: 1px solid #CCCCCC;
+  border-radius: 5px;
 }
 
 /* Selects nested lists, i.e., ONLY ul elements nested within li elements
@@ -36,6 +41,11 @@ ul li ul {
 ul li ul li {
   padding: 2px 7px 2px 7px;
   display: block;
+  border-top: 1px solid #CCCCCC;
+  border-right: 1px solid #333333;
+  border-bottom: 1px solid #333333;
+  border-left: 1px solid #CCCCCC;
+  border-radius: 5px;
 }
 ul li ul li:hover {
   background-color: #A4C739; /* wasabi? green */
