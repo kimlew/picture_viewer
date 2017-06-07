@@ -44,6 +44,7 @@ ul li ul li a {
   display: block;
   color: black;
   text-decoration: none;
+  font-size: 80%;
 }
 
 span:hover {
@@ -51,6 +52,8 @@ span:hover {
   cursor: pointer;
   user-select: none;
 }
+
+
 
 /* Sets visibility property back to visible.
  - shows drop-down menus ONLY when user clicks main menu item 
