@@ -29,7 +29,7 @@ function init() {
   for (var i = 0; i < links.length; i++) {
     links[i].onclick = addImage;
     
-    console.log("i is: ", i, " links[i] is: ", links[1]);
+    console.log("i is: ", i, " links[i] is: ", links[i]);
     console.log("Adding addImage as a click handler for", links[i].getAttribute("href"));
     console.log("In LOOP still and AFTER addImage function name reference");
   }
@@ -87,7 +87,7 @@ function addImage(evObj) {
   
   image.setAttribute("src", imagePath);
 
-  var div = document.getElement("image");
+  var div = document.getElementById("image");
   div.appendChild("image"); // Adds image to the div, i.e., adds element to DOM.
   
   return false; // Prevents browser from going to a new web page.
