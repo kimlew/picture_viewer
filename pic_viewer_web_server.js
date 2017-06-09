@@ -16,7 +16,7 @@ var fs = require("fs");
 var path = require("path");
 var checkMimeType = true;
 
-var port = process.env.PORT || 3003;  // 3003; //TCP port- e.g. 80;
+var port = process.env.PORT || 3003; //TCP port - e.g. 80;
 var serverIpAddress = "127.0.0.1"; // Server IP address: localhost
 
 var connectionStr = process.env.DATABASE_URL || 'postgres://localhost:5000/';
@@ -31,7 +31,7 @@ http.createServer(function (req, res) { // Called with each request. Callback
     // http://localhost:3003 OR http://localhost:3003/ 
     // OR http://localhost:3003/index.html
     
-    // Test if filename === /  - which is root URL which is equivalent to index.html
+    // Test if (filename === /) - which is root URL which is equivalent to index.html
     if (filename === "/") {
        filename = "/pic_viewer.html"; 
     }
@@ -112,4 +112,3 @@ Starting web server at :3003
 
  http://localhost:3003/pic_viewer.html
  */
-
